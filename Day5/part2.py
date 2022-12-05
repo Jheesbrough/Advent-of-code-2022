@@ -6,8 +6,4 @@ for instruction in ls[10:]:
     b,v,b,f,b,t = instruction.split((' '))
     crates[int(t)-1] = crates[int(t)-1] + crates[int(f)-1][-int(v):]
     crates[int(f)-1]=crates[int(f)-1][:-int(v)]
-for i in range(9):
-    try:
-        print(crates[i].pop(), end='')
-    except:
-        print(' ', end='')
+for i in range(9):print(crates[i].pop(), end='')
