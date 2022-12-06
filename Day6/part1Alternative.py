@@ -1,0 +1,2 @@
+for group in (open('inp', 'r').read()[pos:pos + 4] for pos in range(len(open('inp', 'r').read()), 0, -1)):
+    if len(set(list(group))) == 4: print('\x1b[2K\r' + str(open('inp', 'r').read().find(group) + 4), end='')
